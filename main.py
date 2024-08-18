@@ -2,7 +2,7 @@ import pyqrcode
 import streamlit as st
 st.camera_input("Take a picture")
 st.title("Dynamic QR Code Generator")
-s1 = "upi://pay?pa=hamala.anbu@okicici&am="
+s1 = "upi://pay?pa=hamala.anbu@okaxis&am="
 s2 = st.text_input("Enter the Amount")
 s3 = "&cu=INR"
 s = s1+s2+s3
