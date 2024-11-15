@@ -1,6 +1,7 @@
 import pyqrcode
 import streamlit as st
-a = st.text_input("PenCount")
+a = st.text_input("Pen Count")
+c = str(a)
 s2 = a*5
 if st.button("Close the Bill"):
     col1, col2, col3, col4, col5 = st.columns(5)
