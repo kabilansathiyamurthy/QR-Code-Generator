@@ -24,7 +24,7 @@ if st.button("Close the Bill"):
     with col4:
         st.write(a)
     with col5:
-        st.write(a1)
+        st.write(s2)
     if st.button(" UPI "):
         s1 = "upi://pay?pa=saji.diya24@okaxis&am="
         s3 = "&cu=INR"
