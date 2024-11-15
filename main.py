@@ -1,8 +1,8 @@
 import pyqrcode
 import streamlit as st
-a = st.number_input("Pen Count")
-s2 = a*5
-c = str(s2)
+a = st.text_input("Pen Count")
+c = int(a)
+s2 = c*5
 if st.button("Close the Bill"):
     col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
@@ -28,7 +28,7 @@ if st.button("Close the Bill"):
         st.write(s2)
     s1 = "upi://pay?pa=saji.diya24@okaxis&am="
     s3 = "&cu=INR"
-    s = s1+c+s3
+    s = s1+s2+s3
     url=pyqrcode.create(s)
     url.png('myqr.png',scale=10)
     st.image("myqr.png",caption="generated QR")
