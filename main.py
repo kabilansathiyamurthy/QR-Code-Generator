@@ -28,7 +28,7 @@ if st.button("Close the Bill"):
         st.write(s2)
     s1 = "upi://pay?pa=saji.diya24@okaxis&am="
     s3 = "&cu=INR"
-    s = s1+s2+s3
+    s = s1+c+s3
     url=pyqrcode.create(s)
     url.png('myqr.png',scale=10)
     st.image("myqr.png",caption="generated QR")
